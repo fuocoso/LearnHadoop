@@ -73,7 +73,7 @@ public class LoadData extends Configured implements Tool {
                 put.add(COLUMN_FAMILY.getBytes(), "downPackNum".getBytes(), splited[7].getBytes());
                 put.add(COLUMN_FAMILY.getBytes(), "upPayLoad".getBytes(), splited[8].getBytes());
                 put.add(COLUMN_FAMILY.getBytes(), "downPayLoad".getBytes(), splited[9].getBytes());
-                put.add(COLUMN_FAMILY.getBytes(), "httpStatus".getBytes(), splited[9].getBytes());
+                put.add(COLUMN_FAMILY.getBytes(), "httpStatus".getBytes(), splited[10].getBytes());
                 context.write(NullWritable.get(), put);
             }
         }
